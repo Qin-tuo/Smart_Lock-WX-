@@ -1,0 +1,34 @@
+<!--index.wxml-->
+
+<view class='header'>
+    <view class="two">
+      <text>安全保障中</text>
+    </view>
+    <view class="one">
+      <text>连接状态：</text>
+      <!-- <view wx:if='{{deviceConnected}}'>
+        设备已经连接
+      </view>
+      <view wx:else>
+        设备还未连接
+      </view> -->
+      <view class="msg">{{message}}</view>
+    </view>
+</view>
+
+<view class="body-wrapper">
+  <view class="date">
+      <view class="date-logo">
+      <image src="/image/kaiguan.png"></image>
+    </view>
+    <view class="date-text">
+      <view class="date-title">设备开关</view>
+      <view class="switch_info">
+          <switch class='switch_style' id='yellow_led' checked='{{yellow_checked}}' bindchange='switch1Change'></switch>
+          <!-- <switch bindchange="switch1Change"/> -->
+      </view>
+        <!-- <switch  color="#3def9" checked="led" bindchange="onledchange"></switch> -->
+    </view>
+  </view>
+
+</view>

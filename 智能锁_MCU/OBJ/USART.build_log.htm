@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=BUURY-IITAT-WFMI7-EE2JW-Z5PI9-7KTG3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  G:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+D:\Official_Pro\F1智能门锁上云平台+小程序（闲鱼单）\SmartLockV1.2_MCU\USER\USART.uvprojx
+Project File Date:  05/02/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'G:\Keil\ARM\ARMCC\Bin'
+Build target 'USART'
+compiling main.c...
+main.c(95): warning:  #177-D: variable "close"  was declared but never referenced
+  	u8 close = 1;
+main.c(349): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  				sprintf(buf, "请%02d秒后重试", sys.errTime);
+main.c(362): warning:  #940-D: missing return statement at end of non-void function "DisErrCnt" 
+  }
+main.c(374): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
+  		if (key_num != -1)
+main.c(394): warning:  #111-D: statement is unreachable
+  				return -1;
+main.c(394): warning:  #68-D: integer conversion resulted in a change of sign
+  				return -1;
+main.c(396): warning:  #111-D: statement is unreachable
+  				break;
+main.c(419): warning:  #111-D: statement is unreachable
+  				break;
+main.c(421): warning:  #111-D: statement is unreachable
+  				break;
+main.c(424): warning:  #111-D: statement is unreachable
+  				break;
+main.c(483): warning:  #111-D: statement is unreachable
+  					break;
+main.c(524): warning:  #111-D: statement is unreachable
+  					break;
+main.c(437): warning:  #177-D: variable "time"  was declared but never referenced
+  	u16 num = 0, num2 = 0, time3 = 0, time;
+main.c(440): warning:  #177-D: variable "buf"  was declared but never referenced
+  	u8 buf[64];
+main.c(891): warning:  #111-D: statement is unreachable
+  				break;
+main.c(935): warning:  #111-D: statement is unreachable
+  				break;
+main.c(1184): warning:  #177-D: variable "key"  was declared but never referenced
+  	u8 key;
+main.c(980): warning: C4487E: read from variable 'pwd' with offset out of bounds
+}
+main.c(980): warning: C4487E: read from variable 'pwd' with offset out of bounds
+}
+main.c: 19 warnings, 0 errors
+linking...
+Program Size: Code=32336 RO-data=13648 RW-data=160 ZI-data=5896  
+FromELF: creating hex file...
+"..\OBJ\USART.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.1.0.pack
+                Keil.STM32F1xx_DFP.2.1.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_USART
+  G:\Keil\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

@@ -1,0 +1,25 @@
+image {
+  height: 100%;
+  width: 100%;
+}
+
+.welcome-img {
+  position: absolute;
+  z-index: 1;
+}
+
+.welcome-btn {
+  background-color: #6633FF	;
+  color: white;
+  font-size: 38rpx;
+  width: 330rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 120rpx;
+  left: 20px;
+  right:20px;
+  z-index: 2;
+}

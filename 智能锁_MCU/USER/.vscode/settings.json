@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "button4_4.h": "c",
+        "oled.h": "c",
+        "onenet.h": "c"
+    }
+}
