@@ -1,7 +1,5 @@
 #include "main.h"
-
 #include <string.h>
-
 SysTemPat sys;
 
 #define MAXERRTIMES 2
@@ -99,20 +97,16 @@ int main(void)
 	// SysHSI_Init();
 	delay_init();									//延时函数初始化
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //设置NVIC中断分组2:2位抢占优先级，2位响应优先级
-	uart_init(9600);								//串口初始化为9600
-													//	printf("串口功能正常\r\n");
+	uart_init(9600);								//串口初始化为9600													//	printf("串口功能正常\r\n");
 	uart_init(115200);								//串口初始化为115200
-	ESP8266_Init();									//初始化ESP8266
-//													//	UsartPrintf(USART_DEBUG, " Hardware init OK\r\n");
+	ESP8266_Init();									//初始化ESP8266													//													//	UsartPrintf(USART_DEBUG, " Hardware init OK\r\n");
 	Button4_4_Init();								//初始化与按键连接的硬件接口
-
 	OLED_Init();			   //显示初始化
 	Walkmotor_Init();		   //步进电机初始化
 	BEEP_Init();			   //蜂鸣器初始化
 	usart2_init(usart2_baund); //初始化指纹模块
 	PS_StaGPIO_Init();
 	OLED_Clear();
-
 	starting();		  //开机信息  logo
 	err = RTC_Init(); // RTC初始化
 	if (err)
@@ -331,23 +325,23 @@ u8 DisErrCnt(void)
 				time = 0;
 				if (sys.errTime == 0)
 				{
-					warn=0;
+					warn = 0;
 					OLED_Clear();
 					break;
 				}
 				warn = 1;
-				if (++timeCount >= 100&&warn==1) //发送间隔3s
-			 {
-				//			UsartPrintf(USART_DEBUG, "OneNet_SendData\r\n");
-				OneNet_SendData(); //发送数据
+				if (++timeCount >= 100 && warn == 1) //发送间隔3s
+				{
+					//			UsartPrintf(USART_DEBUG, "OneNet_SendData\r\n");
+					OneNet_SendData(); //发送数据
 
-				timeCount = 0;
-				warn=0;
-				ESP8266_Clear();
-			 }
+					timeCount = 0;
+					warn = 0;
+					ESP8266_Clear();
+				}
 				Show_Str(0, 16, 128, 16, "密码错误次数过多", 16, 0);
 				sprintf(buf, "请%02d秒后重试", sys.errTime);
-				
+
 				Show_Str(20, 32, 128, 16, buf, 16, 0);
 				OLED_Refresh_Gram(); //更新显示
 			}
