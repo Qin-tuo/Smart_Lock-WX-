@@ -1,7 +1,6 @@
 #include "main.h"
 #include <string.h>
 SysTemPat sys;
-
 #define MAXERRTIMES 2
 #define usart2_baund 57600 //串口2波特率，根据指纹模块波特率更改
 
@@ -11,7 +10,6 @@ const u8 TEXT_Buffer[] = {0x17, 0x23, 0x6f, 0x60, 0, 0};
 #define SIZE TEXT_LENTH / 4 + ((TEXT_LENTH % 4) ? 1 : 0)
 #define FLASH_SAVE_ADDR 0X0802C124 //设置FLASH 保存地址(必须为偶数，且所在扇区,要大于本代码所占用到的扇区.
 								   //否则,写操作的时候,可能会导致擦除整个扇区,从而引起部分程序丢失.引起死机.
-
 SysPara AS608Para; //指纹模块AS608参数
 u16 ValidN;		   //模块内有效指纹个数
 u8 **kbd_tbl;
