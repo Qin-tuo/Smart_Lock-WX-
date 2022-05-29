@@ -21,50 +21,52 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
 Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
-D:\Official_Pro\F1智能门锁上云平台+小程序（闲鱼单）\SmartLockV1.2_MCU\USER\USART.uvprojx
+c:\Users\24189\Desktop\Smart_Lock-WX-\智能锁（STM32端源码）\USER\USART.uvprojx
 Project File Date:  05/02/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'G:\Keil\ARM\ARMCC\Bin'
 Build target 'USART'
+compiling onenet.c...
+compiling rtc.c...
 compiling main.c...
-main.c(95): warning:  #177-D: variable "close"  was declared but never referenced
+main.c(93): warning:  #177-D: variable "close"  was declared but never referenced
   	u8 close = 1;
-main.c(349): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+main.c(343): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
   				sprintf(buf, "请%02d秒后重试", sys.errTime);
-main.c(362): warning:  #940-D: missing return statement at end of non-void function "DisErrCnt" 
+main.c(356): warning:  #940-D: missing return statement at end of non-void function "DisErrCnt" 
   }
-main.c(374): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
+main.c(368): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
   		if (key_num != -1)
-main.c(394): warning:  #111-D: statement is unreachable
+main.c(388): warning:  #111-D: statement is unreachable
   				return -1;
-main.c(394): warning:  #68-D: integer conversion resulted in a change of sign
+main.c(388): warning:  #68-D: integer conversion resulted in a change of sign
   				return -1;
-main.c(396): warning:  #111-D: statement is unreachable
+main.c(390): warning:  #111-D: statement is unreachable
   				break;
-main.c(419): warning:  #111-D: statement is unreachable
+main.c(413): warning:  #111-D: statement is unreachable
   				break;
-main.c(421): warning:  #111-D: statement is unreachable
+main.c(415): warning:  #111-D: statement is unreachable
   				break;
-main.c(424): warning:  #111-D: statement is unreachable
+main.c(418): warning:  #111-D: statement is unreachable
   				break;
-main.c(483): warning:  #111-D: statement is unreachable
+main.c(477): warning:  #111-D: statement is unreachable
   					break;
-main.c(524): warning:  #111-D: statement is unreachable
+main.c(518): warning:  #111-D: statement is unreachable
   					break;
-main.c(437): warning:  #177-D: variable "time"  was declared but never referenced
+main.c(431): warning:  #177-D: variable "time"  was declared but never referenced
   	u16 num = 0, num2 = 0, time3 = 0, time;
-main.c(440): warning:  #177-D: variable "buf"  was declared but never referenced
+main.c(434): warning:  #177-D: variable "buf"  was declared but never referenced
   	u8 buf[64];
-main.c(891): warning:  #111-D: statement is unreachable
+main.c(885): warning:  #111-D: statement is unreachable
   				break;
-main.c(935): warning:  #111-D: statement is unreachable
+main.c(929): warning:  #111-D: statement is unreachable
   				break;
-main.c(1184): warning:  #177-D: variable "key"  was declared but never referenced
+main.c(1178): warning:  #177-D: variable "key"  was declared but never referenced
   	u8 key;
-main.c(980): warning: C4487E: read from variable 'pwd' with offset out of bounds
+main.c(974): warning: C4487E: read from variable 'pwd' with offset out of bounds
 }
-main.c(980): warning: C4487E: read from variable 'pwd' with offset out of bounds
+main.c(974): warning: C4487E: read from variable 'pwd' with offset out of bounds
 }
 main.c: 19 warnings, 0 errors
 linking...
@@ -84,7 +86,7 @@ Package Vendor: Keil
   G:\Keil\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:08
 </pre>
 </body>
 </html>

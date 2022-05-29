@@ -15,7 +15,8 @@
 #include "onenet.h"
 //ÍøÂçÉè±¸
 #include "esp8266.h"
-
+//
+#include "misc.h"
 
 typedef struct 
 {

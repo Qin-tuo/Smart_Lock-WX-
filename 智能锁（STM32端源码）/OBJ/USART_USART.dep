@@ -1,6 +1,6 @@
 Dependencies for Project 'USART', Target 'USART': (DO NOT MODIFY !)
-F (.\main.c)(0x62738812)(-c --cpu Cortex-M3 -D__MICROLIB -g -O2 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE -I ..\ESP8266 -I ..\MQTT -I ..\ONENET-I.\RTE\_USART-IG:\Keil\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
-I (main.h)(0x625BBA86)
+F (.\main.c)(0x6293492F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O2 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\KEY -I ..\HARDWARE -I ..\ESP8266 -I ..\MQTT -I ..\ONENET-I.\RTE\_USART-IG:\Keil\Pack\Keil\STM32F1xx_DFP\2.1.0\Device\Include-IG:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+I (main.h)(0x6293492F)
 I (..\HARDWARE\LED\led.h)(0x6265598A)
 I (..\SYSTEM\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x4D783CB4)
@@ -340,7 +340,7 @@ I (..\SYSTEM\delay\delay.h)(0x555AC82C)
 I (..\SYSTEM\usart\usart.h)(0x625BBE84)
 I (G:\Keil\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\HARDWARE\rtc.h)(0x550BBF14)
-I (..\USER\main.h)(0x625BBA86)
+I (..\USER\main.h)(0x6293492F)
 I (..\HARDWARE\LED\led.h)(0x6265598A)
 I (..\HARDWARE\KEY\key.h)(0x550A8568)
 I (..\HARDWARE\usart2.h)(0x61A395F9)
@@ -890,7 +890,7 @@ I (..\SYSTEM\usart\usart.h)(0x625BBE84)
 I (G:\Keil\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (..\SYSTEM\sys\sys.h)(0x550F951C)
 I (..\SYSTEM\delay\delay.h)(0x555AC82C)
-I (..\USER\main.h)(0x625BBA86)
+I (..\USER\main.h)(0x6293492F)
 I (..\HARDWARE\LED\led.h)(0x6265598A)
 I (..\HARDWARE\KEY\key.h)(0x550A8568)
 I (..\HARDWARE\usart2.h)(0x61A395F9)
